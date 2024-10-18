@@ -1,0 +1,133 @@
+.single-product {
+  background-color: var(--background);
+  padding: 30px 30px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 35px;
+}
+
+.single-product h4 {
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.single-product:hover h4 {
+  color: var(--secondary);
+}
+
+/* Over-lay */
+.single-product .over-lay {
+  transition: all 0.3s ease, z-index 0.3s ease;
+}
+
+.single-product .over-lay button {
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 36px;
+  color: #fff;
+  background-color: var(--primary);
+  opacity: 0;
+  transition: all 0.3s ease, opacity 0.3s ease;
+}
+
+.single-product .over-lay button:hover {
+  background-color: var(--secondary);
+}
+
+.single-product .over-lay ul {
+  right: 10px;
+  bottom: 30px;
+  transform: translateX(50px);
+  transition: transform 0.3s ease;
+}
+
+/* Over-lay when hover */
+.single-product:hover .over-lay {
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.single-product:hover .over-lay ul {
+  transform: translateX(0);
+}
+
+.single-product:hover .over-lay button {
+  opacity: 1;
+}
+
+/* Price */
+.single-product .price > * {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.5px;
+}
+
+.single-product .price .old-price {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.single-product .price .discount {
+  font-size: 12px;
+  line-height: 14.52px;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.single-product svg {
+  cursor: pointer;
+}
+
+/* ============== product-details ============== */
+.product-details {
+  padding: 60px 0;
+}
+.product-details .images {
+  border-right: 1px solid #eaeaea;
+}
+
+.product-details .product-data h3 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44.5px;
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+
+.product-details .product-data p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  margin-bottom: 20px;
+}
+
+.product-details .product-data h4 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29.5px;
+  margin-bottom: 20px;
+}
+
+.product-details .product-data button {
+  font-weight: 400;
+  padding: 10px 20px;
+  border-radius: 36px;
+  color: #fff;
+  background-color: var(--primary);
+  margin-right: 5px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.product-details .product-data button:hover {
+  background-color: var(--secondary);
+  transition: all 0.3s ease;
+}
+
+.product-details button svg {
+  color: #fff !important;
+}
+
+.product-details .product-data .icon-wishlist {
+  color: var(--secondary);
+}
